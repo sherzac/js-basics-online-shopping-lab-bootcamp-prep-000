@@ -21,7 +21,7 @@ function viewCart() {
   // write your code here
   var cartItems = []
   if (cart.length !== 0) {
-   for(var i = 0; i < cart.length; i++) {
+   for(var i in cart) {
      cartItems.push(` ${Object.keys(cart[i])} at ${Object.values(cart[i])}`)
      }return `In your cart, you have` + [cartItems] + `.`;
     } else {
