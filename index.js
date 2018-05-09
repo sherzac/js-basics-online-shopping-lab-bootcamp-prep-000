@@ -29,7 +29,7 @@ function viewCart() {
     }
   
   if (cart.length === 1) {
-    console.log(`In your cart, you have ${cartItems[0]}.`);
+    return(`In your cart, you have ${cartItems[0]}.`);
   }
     
     
