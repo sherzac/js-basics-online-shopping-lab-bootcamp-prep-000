@@ -33,7 +33,7 @@ function viewCart() {
   if (cart.length === 1) {
     return `In your cart, you have ${cartItems[0]}.`;
   } else if (cart.length === 2) {
-    return (`In your cart, you have ${cartItems[0]} and ${cartItems[1]}.`);
+    return (`In your cart, you have ${cartItems.join(", "}`);
   }else if (cart.length > 2) {
     var endItem = cartItems.pop();
     return (`In your cart, you have ${cartItems.join(", ")}, and ${endItem}.`);
