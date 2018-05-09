@@ -27,6 +27,13 @@ function viewCart() {
         cartItems.push(` ${Object.keys(cart[i])[0]} at \$${cart[i][Object.keys(cart[i])[0]]}`);
       }
     }
+  
+  if (cart.length === 1) {
+    console.log(`In your cart, you have ${cartItems[0]}.`);
+  }
+    
+    
+    
 }
 
 /*}return `In your cart, you have` + [cartItems] + `.`;*/
