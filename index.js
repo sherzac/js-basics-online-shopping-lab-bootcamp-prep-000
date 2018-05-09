@@ -24,8 +24,8 @@ function addToCart(item) {
     return "Your shopping cart is empty.";
   } else {
     for(var i in cart) {
-      var itemKey = Object.keys(cart[i])[0];
-      var itemValue = cart[i][itemKey]
+      var itemKey = cart[i].itemName;
+      var itemValue = cart[i].itemPrice
       cartItems.push(`${itemKey} at \$${itemValue}`);
     }
   }
