@@ -21,7 +21,7 @@ function viewCart() {
   var cartItems = [];
   var cartHave = 'In your cart, you have'
   
-  if (cart.length === 0) {
+  if (currentItems.length === 0) {
     return("Your shopping cart is empty.");
   } else {
     for(var i in cart) {
@@ -34,7 +34,7 @@ function viewCart() {
   if (cartItems.length === 1) {
     return (`${cartHave} ${cartItems[0]}.`);
   } else if (cart.length === 2) {
-    return ('In your cart, you have ')
+    return ('In your cart, you have ${cartItems[0]')
   }
     
     
