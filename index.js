@@ -41,7 +41,7 @@ function viewCart() {
 
 
 function total() {
-  // write your code here
+  var cost = 0;
 }
 
 function removeFromCart(item) {
