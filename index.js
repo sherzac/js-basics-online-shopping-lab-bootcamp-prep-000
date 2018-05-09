@@ -43,6 +43,10 @@ function addToCart(item) {
 
 function viewCart() {
   cartItems = []
+  for (var i in cart) {
+    var itemKey = cart[i].itemName
+    var itemValue = 
+  }
   
   if (cart.length === 0) {
     return "Your shopping cart is empty.";
