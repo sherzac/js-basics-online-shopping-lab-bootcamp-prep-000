@@ -17,7 +17,7 @@ function addToCart(item) {
   return item + ' has been added to your cart.';
 }
 
-/*function viewCart() {
+function viewCart() {
   var cartItems = [];
   
   if (cart.length === 0) {
@@ -26,7 +26,7 @@ function addToCart(item) {
     for(var i in cart) {
       var itemKey = cart[i].itemName;
       var itemValue = cart[i].itemPrice
-      cartItems.push(`${itemKey} at \$${itemValue}`);
+      cartItems.push(`${itemKey} at $${itemValue}`);
     }
   }
   
@@ -39,9 +39,9 @@ function addToCart(item) {
     return (`In your cart, you have ${cartItems.join(", ")}, and ${endItem}.`);
   }
     
-}*/
+}
 
-function viewCart() {
+/*function viewCart() {
   cartItems = []
   for (var i in cart) {
     var itemKey = cart[i].itemName
@@ -57,7 +57,7 @@ function viewCart() {
     return `In your cart, you have `
   }
 }
-
+*/
 
 
 function total() {
