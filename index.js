@@ -19,17 +19,20 @@ function addToCart(item) {
 
 function viewCart() {
   var cartItems = [];
+  var cartHave = 'In your cart, you have '
   
   if (cart.length === 0) {
     return("Your shopping cart is empty.");
   } else {
       for(var i in cart) {
-        cartItems.push(` ${Object.keys(cart[i])[0]} at \$${cart[i][Object.keys(cart[i])[0]]}`);
+        cartItems.push(`${Object.keys(cart[i])[0]} at \$${cart[i][Object.keys(cart[i])[0]]}`);
       }
     }
   
   if (cart.length === 1) {
-    return(`In your cart, you have ${cartItems[0]}.`);
+    return (`${cartHave} ${cartItems[0]}.`);
+  } else if (cart.length === 2) {
+    return ('In your cart, you have ')
   }
     
     
