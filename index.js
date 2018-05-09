@@ -33,11 +33,11 @@ function viewCart() {
   
   if (cartItems.length === 1) {
     return (`${cartHave} ${cartItems[0]}.`);
-  } else if (cart.length === 2) {
-    return (`${cartHave} ${cartItems[0]`)
+  } else if (cartitems.length === 2) {
+    return (`${cartHave} ${cartItems[0]} and ${cartItems[1]}.`);
+  }else if (cartItems.length > 2) {
+    return (`${cartHave} ${cartItems.join(", ")}, and ${endItem}.`);
   }
-    
-    
     
 }
 
