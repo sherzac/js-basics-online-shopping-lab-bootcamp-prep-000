@@ -30,11 +30,11 @@ function viewCart() {
     }
   }
   
-  if (cartItems.length === 1) {
+  if (cart.length === 1) {
     return `In your cart, you have ${cartItems[0]}.`;
-  } else if (cartitems.length === 2) {
+  } else if (cart.length === 2) {
     return (`In your cart, you have ${cartItems[0]} and ${cartItems[1]}.`);
-  }else if (cartItems.length > 2) {
+  }else if (cart.length > 2) {
     return (`In your cart, you have ${cartItems.join(", ")}, and ${endItem}.`);
   }
     
