@@ -34,7 +34,7 @@ function viewCart() {
   if (cartItems.length === 1) {
     return (`${cartHave} ${cartItems[0]}.`);
   } else if (cart.length === 2) {
-    return ('In your cart, you have ${cartItems[0]')
+    return (`In your cart, you have ${cartItems[0]`)
   }
     
     
