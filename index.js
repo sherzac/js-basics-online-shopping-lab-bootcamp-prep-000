@@ -18,21 +18,19 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
   var cartItems = [];
   
   if (cart.length === 0) {
     console.log("Your shopping cart is empty.");
-   /* {
-     
-     }return `In your cart, you have` + [cartItems] + `.`;*/
-    } else {
+  } else {
       for(var i in cart) {
-         cartItems.push(` ${Object.keys(cart[i])[0]} at \$${cart[i][Object.keys(cart[i])[0]]}`);
+        cartItems.push(` ${Object.keys(cart[i])[0]} at \$${cart[i][Object.keys(cart[i])[0]]}`);
       }
-     
     }
 }
+
+/*}return `In your cart, you have` + [cartItems] + `.`;*/
+
 
 function total() {
   // write your code here
