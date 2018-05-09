@@ -35,6 +35,7 @@ function viewCart() {
   } else if (cart.length === 2) {
     return (`In your cart, you have ${cartItems[0]} and ${cartItems[1]}.`);
   }else if (cart.length > 2) {
+    var endItem = currentCart.pop();
     return (`In your cart, you have ${cartItems.join(", ")}, and ${endItem}.`);
   }
     
